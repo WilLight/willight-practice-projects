@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 235, 245);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 15px 50px 15px 50px;
+    background-color: rgb(235, 235, 245);
+}
+
+.nav-link {
+    height: 20px;
+    width: auto;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(235, 235, 245);
+}
+
+.nav-link:hover {
+    background-color: rgb(150, 170, 255);
+    color: white;
+}
+
+.video-space {
+    grid-area: video-space;
+}
+
+#box-company-name {
+    width: 100px;
+    font-size: 1.5em;
+}
+
+#nav-right-empty {
+    width: 1vw;
+}
+
+#about {
+    padding: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#box-label-email {
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 220, 0)
+}
+
+#label-email {
+    color: rgb(30, 20, 0);
+    font-size: 2em;
+}
+
+#box-email {
+    margin: auto;
+    padding: 20px;
+}
+
+#video {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "video-space video-player video-space";
+    grid-template-rows: 1fr auto 1fr;
+}
+
+#video-player {
+    grid-area: video-player;
+}
+
+@media (max-width:500px) {
+    body {
+        padding: 15px 20px 15px 20px;
+    }
+}
